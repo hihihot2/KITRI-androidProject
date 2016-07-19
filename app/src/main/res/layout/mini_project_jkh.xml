@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mini_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택장애를 위한 랜덤 음식 고르기"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/mini_top"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/mini_menu_img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/menu1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mini_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:text="메뉴선택 - 음식선택 - 주변검색 버튼"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mini_center"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/mini_center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/mini_food_img"
+            android:src="@drawable/pizza1"/>
+    </LinearLayout>
+
+</RelativeLayout>
